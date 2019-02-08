@@ -1,0 +1,13 @@
+<ActionBar class="action-bar">
+    <Label class="action-bar-title" text="Home"></Label>
+</ActionBar>
+
+<GridLayout class="page">
+    <RadDataForm [source]="formData">
+        <TKEntityProperty tkDataFormProperty displayName="Email" name="email" index=0 required="true">
+        </TKEntityProperty>
+        <TKEntityProperty tkDataFormProperty displayName="Password" name="secret" index=1 required="true">
+        </TKEntityProperty>
+        <TKEntityProperty tkDataFormProperty hidden="true" name="secretConfirm"></TKEntityProperty>
+    </RadDataForm>
+</GridLayout>
